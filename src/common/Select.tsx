@@ -183,6 +183,7 @@ const Select = (props: any) => {
                 backspaceRemovesValue={false}
                 hideSelectedOptions={false}
                 blurInputOnSelect={false}
+                isDisabled={props.isLoading}
             />
         );
     }
@@ -203,6 +204,7 @@ const Select = (props: any) => {
             hideSelectedOptions={true}
             backspaceRemovesValue={false}
             blurInputOnSelect={true}
+            isDisabled={props.isLoading}
         />
     );
 };
